@@ -30,7 +30,7 @@ INDEX is a dark theme.
 
 ## Setup
 
-1. Install [TriliumNext](https://github.com/TriliumNext/Notes) (Tested in version v0.90.12)
+1. Install [TriliumNext](https://github.com/TriliumNext/Notes) (Tested in version v0.90.12).
 2. Create a new note.
 3. Inside the new note create another new note, and set the type to CSS.
 4. Paste the code from the [INDEX](./INDEX.css) file.

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "NotoSansMono";
+    src: url("/custom/CONFIG/NotoSansMono.ttf") format("truetype");
+}
+
+:root {
+    --accented-background-color: black;
+    --active-item-background-color: black;
+    --active-item-text-color: lightgrey;
+    --active-tab-background-color: #202020;
+    --active-tab-text-color: grey;
+    --button-background-color: transparent;
+    --button-border-color: transparent;
+    --button-border-radius: 0px;
+    --button-disabled-background-color: transparent;
+    --button-text-color: darkgrey;
+    --detail-font-family: "NotoSansMono";
+    --detail-font-size: normal;
+    --detail-text-font-family: "NotoSansMono";
+    --header-background-color: red !important;
+    --hover-item-background-color: black;
+    --hover-item-text-color: white;
+    --inactive-tab-background-color: black;
+    --inactive-tab-text-color: grey;
+    --input-background-color: black !important;
+    --input-text-color: darkgrey;
+    --launcher-pane-background-color: black;
+    --left-pane-background-color: black;
+    --left-pane-text-color: grey;
+    --link-color: lightgrey;
+    --main-background-color: black;
+    --main-border-color: grey;
+    --main-font-family: "NotoSansMono";
+    --main-font-size: normal;
+    --main-text-color: grey;
+    --menu-background-color: black;
+    --menu-text-color: grey;
+    --mermaid-theme: dark;
+    --modal-backdrop-color: black;
+    --modal-background-color: black;
+    --monospace-font-family: "NotoSansMono";
+    --more-accented-background-color: #202020;
+    --muted-text-color: darkgrey;
+    --primary-button-background-color: transparent;
+    --primary-button-border-color: grey;
+    --primary-button-text-color: grey;
+    --scrollbar-background-color: #202020;
+    --scrollbar-border-color: black;
+    --scrollbar-border-color: transparent;
+    --tooltip-background-color: #202020;
+    --tree-font-family: inherit;
+    --tree-font-size: normal;
+    --bs-border-color: grey;
+}
+
+#root-widget ::-webkit-scrollbar {
+    width: 8px;
+}
+
+#root-widget ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--bs-border-color) !important;
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+body .note-detail-text {
+    font-size: 1rem;
+}
+
+body .CodeMirror {
+    filter: invert(100%);
+}
+
+span.fancytree-node,
+span.fancytree-node:hover {
+    border: 0px;
+}
+
+div.gutter.gutter-horizontal {
+    width: 2px !important;
+    background: linear-gradient(to bottom, transparent, #202020, transparent);
+}
+
+.tree-actions {
+    border: 0px !important;
+}

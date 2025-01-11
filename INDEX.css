@@ -3,12 +3,52 @@
     src: url("/custom/CONFIG/NotoSansMono.ttf") format("truetype");
 }
 
+/* COLOR DEFINITION START */
 :root {
-    --accented-background-color: black;
-    --active-item-background-color: black;
-    --active-item-text-color: lightgrey;
-    --active-tab-background-color: #202020;
-    --active-tab-text-color: grey;
+    --color-index-0: rgb(0, 0, 0);
+    --color-index-16: rgb(16, 16, 16);
+    --color-index-32: rgb(32, 32, 32);
+    --color-index-48: rgb(48, 48, 48);
+    --color-index-64: rgb(64, 64, 64);
+    --color-index-80: rgb(80, 80, 80);
+    --color-index-96: rgb(96, 96, 96);
+    --color-index-112: rgb(112, 112, 112);
+    --color-index-128: rgb(128, 128, 128);
+    --color-index-144: rgb(144, 144, 144);
+    --color-index-160: rgb(160, 160, 160);
+    --color-index-176: rgb(176, 176, 176);
+    --color-index-192: rgb(192, 192, 192);
+    --color-index-208: rgb(208, 208, 208);
+    --color-index-224: rgb(224, 224, 224);
+    --color-index-240: rgb(240, 240, 240);
+}
+/* COLOR DEFINITION END */
+
+/* TAB START */
+:root {
+    --active-tab-background-color: var(--color-index-64);
+    --active-tab-text-color: var(--color-index-128);
+    --inactive-tab-background-color: var(--color-index-16);
+    --inactive-tab-text-color: var(--color-index-128);
+}
+/* TAB END */
+
+/* TITLE OF THE NOTE START */
+:root {
+    --input-background-color: var(--color-index-0) !important;
+    --input-text-color: var(--color-index-112);
+}
+/* TITLE OF THE NOTE END */
+
+
+
+
+:root {
+    --theme-style: dark;
+    --accented-background-color: var(--color-index-0);
+    --active-item-background-color: var(--color-index-0);
+    --active-item-text-color: var(--color-index-192);
+    
     --button-background-color: transparent;
     --button-border-color: transparent;
     --button-border-radius: 0px;
@@ -18,28 +58,26 @@
     --detail-font-size: normal;
     --detail-text-font-family: "NotoSansMono";
     --header-background-color: red !important;
-    --hover-item-background-color: black;
-    --hover-item-text-color: white;
-    --inactive-tab-background-color: black;
-    --inactive-tab-text-color: grey;
-    --input-background-color: black !important;
-    --input-text-color: darkgrey;
-    --launcher-pane-background-color: black;
-    --left-pane-background-color: black;
-    --left-pane-text-color: grey;
-    --link-color: lightgrey;
+    --hover-item-background-color: var(--color-index-0);
+    --hover-item-text-color: var(--color-index-128);
+    
+   
+    --launcher-pane-background-color: var(--color-index-0);
+    --left-pane-background-color: var(--color-index-0);
+    --left-pane-text-color: var(--color-index-112);
+    --link-color: var(--color-index-64);
     --main-background-color: black;
-    --main-border-color: grey;
+    --main-border-color: var(--color-index-32);
     --main-font-family: "NotoSansMono";
     --main-font-size: normal;
-    --main-text-color: grey;
+    --main-text-color: var(--color-index-192);
     --menu-background-color: black;
     --menu-text-color: grey;
     --mermaid-theme: dark;
     --modal-backdrop-color: black;
     --modal-background-color: black;
     --monospace-font-family: "NotoSansMono";
-    --more-accented-background-color: #202020;
+    --more-accented-background-color: var(--color-index-16);
     --muted-text-color: darkgrey;
     --primary-button-background-color: transparent;
     --primary-button-border-color: grey;
@@ -50,7 +88,7 @@
     --tooltip-background-color: #202020;
     --tree-font-family: inherit;
     --tree-font-size: normal;
-    --bs-border-color: grey;
+    --bs-border-color: var(--color-index-16);
 }
 
 #root-widget ::-webkit-scrollbar {
@@ -65,7 +103,7 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: var(--bs-border-color) !important;
+    border-color: var(--color-index-16) !important;
     box-shadow: 0 0 0 0 transparent !important;
 }
 
@@ -83,10 +121,17 @@ span.fancytree-node:hover {
 }
 
 div.gutter.gutter-horizontal {
-    width: 2px !important;
-    background: linear-gradient(to bottom, transparent, #202020, transparent);
+    background: linear-gradient(to bottom, transparent, var(--color-index-16), transparent);
 }
 
 .tree-actions {
     border: 0px !important;
+}
+
+.rendered-note-attributes {
+    display: none;
+}
+
+div#right-pane li::marker {
+    content: "⚫ ";
 }

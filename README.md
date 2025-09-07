@@ -6,7 +6,8 @@ INDEX is a dark theme.
 
 ### Homepage
 
-![HOME](./assets/home.png)
+<img width="2710" height="1702" alt="image" src="https://github.com/user-attachments/assets/6905ceda-e167-4b83-aef5-4ddc93b6b885" />
+
 
 ### Tree Map
 

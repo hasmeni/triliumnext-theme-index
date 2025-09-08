@@ -78,3 +78,50 @@ If the Pricedown font is not available, the theme will automatically fall back t
 3. Arial Black
 4. System sans-serif fonts
 
+
+---
+
+##GTA Dark Mode method
+<img width="2668" height="1656" alt="image" src="https://github.com/user-attachments/assets/d3bd1d88-02b8-43bd-b436-de4dd365e90e" />
+
+### Installation Steps
+
+1. **Create Theme Note Structure:**
+   - Create a new note in TriliumNext
+   - Inside this note, create another new note and set the type to **CSS**
+
+2. **Add Theme CSS:**
+   - Copy and paste the code from the [INDEX-DARK.css](./INDEX-DARK.css) file into the CSS note
+   - Set `Owned Attributes` to `#appTheme=GTAdark`
+
+3. **Add GTA-Style Font:**
+  
+   - Add the `GTAdark.ttf` file to the first note you created in step 1
+   - Set `Owned Attributes` to:
+     ```
+     #originalFileName=GTAdark.ttf #customResourceProvider="CONFIG/GTAdark.ttf"
+     ```
+
+4. **Apply Theme:**
+   - Restart TriliumNext
+   - Go to **Settings > Appearance**
+   - Set `Application Theme` to `GTAdark`
+   - Set `Code Syntax Highlighting for Text Notes` `Color Scheme` to `xt256 (DARK)`
+   - Restart TriliumNext again if needed
+
+### Features
+- **GTA-Style Typography:** Uses GTAdark font with Orbitron and Rajdhani as fallbacks
+- **Pronounced Liquid Glass Effects:** Enhanced blur, saturation, and transparency effects
+- **Dark Burnt Orange Theme:** Rich, warm color palette with glass-like transparency
+- **Modern UI Elements:** Rounded corners, smooth animations, and enhanced shadows
+- **Accessibility:** High contrast mode support and reduced motion options
+
+### Fallback Fonts
+If the GTAdark font is not available, the theme will automatically fall back to:
+1. Orbitron (Google Fonts)
+2. Rajdhani (Google Fonts) 
+3. Arial Black
+4. System sans-serif fonts
+
+
+

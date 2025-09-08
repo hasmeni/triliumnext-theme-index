@@ -1,6 +1,6 @@
-# triliumnext-theme-index 
+# triliumnext-theme-index-cc-ed
 
-INDEX is a dark theme.
+INDEX-cc-ed is a modern dark theme with GTA-style typography and pronounced liquid glass effects, featuring a dark burnt orange color scheme.
 
 ## Examples
 

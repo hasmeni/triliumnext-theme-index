@@ -27,9 +27,9 @@ INDEX is a dark theme.
 12. You may need to restart TriliumNext.
 
 13.
-14.  ---
+     ---
 
-15.  
+    
 16. ## SETUP METHOD FOR GTA STYLE FONT ( DIFFERENT THEME FROM THE ORINIAL. )
 - Install [TriliumNext](https://github.com/TriliumNext/Notes) (Tested in version v0.90.12)
 - Download the **Pricedown** font (GTA-style font) from one of these sources:
@@ -44,22 +44,21 @@ INDEX is a dark theme.
    - Inside this note, create another new note and set the type to **CSS**
 
 2. **Add Theme CSS:**
-   - Copy and paste the code from the [INDEX.css](./INDEX.css) file into the CSS note
-   - Set `Owned Attributes` to `#appTheme=INDEX`
+   - Copy and paste the code from the [pricedown.css](./pricedown.css) file into the CSS note
+   - Set `Owned Attributes` to `#appTheme=pricedown`
 
 3. **Add GTA-Style Font:**
    - Download the **Pricedown.ttf** font file from the sources above
    - Add the `Pricedown.ttf` file to the first note you created in step 1
    - Set `Owned Attributes` to:
      ```
-     #originalFileName=Pricedown.ttf
-     #customResourceProvider="CONFIG/Pricedown.ttf"
+     #originalFileName=Pricedown.ttf #customResourceProvider="CONFIG/Pricedown.ttf"
      ```
 
 4. **Apply Theme:**
    - Restart TriliumNext
    - Go to **Settings > Appearance**
-   - Set `Application Theme` to `INDEX`
+   - Set `Application Theme` to `pricedown`
    - Set `Code Syntax Highlighting for Text Notes` `Color Scheme` to `xt256 (DARK)`
    - Restart TriliumNext again if needed
 

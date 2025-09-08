@@ -1,0 +1,643 @@
+@font-face {
+    font-family: "Pricedown";
+    src: url("/custom/CONFIG/Pricedown.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fallback fonts for GTA-style appearance */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* ULTRA DARK COLOR PALETTE - DEEP DARK THEME */
+:root {
+    /* Ultra dark base colors */
+    --color-primary: #000000;
+    --color-secondary: #0a0a0a;
+    --color-tertiary: #111111;
+    --color-quaternary: #1a1a1a;
+    
+    /* Muted dark orange spectrum */
+    --color-burnt-orange-100: #2d1b0f;
+    --color-burnt-orange-200: #3d2414;
+    --color-burnt-orange-300: #4d2e1a;
+    --color-burnt-orange-400: #5a351f;
+    --color-burnt-orange-500: #6b3e24;
+    
+    /* Subtle accent colors */
+    --color-accent-warm: #4a2c1a;
+    --color-accent-cool: #3d2414;
+    --color-accent-gold: #5a351f;
+    
+    /* High contrast text colors */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e0e0e0;
+    --color-text-muted: #a0a0a0;
+    --color-text-disabled: #606060;
+    
+    /* Enhanced dark glass effect colors */
+    --glass-bg: rgba(0, 0, 0, 0.9);
+    --glass-bg-light: rgba(0, 0, 0, 0.7);
+    --glass-bg-heavy: rgba(0, 0, 0, 0.95);
+    --glass-border: rgba(90, 53, 31, 0.3);
+    --glass-border-strong: rgba(90, 53, 31, 0.5);
+    --glass-shadow: rgba(0, 0, 0, 0.8);
+    --glass-shadow-heavy: rgba(0, 0, 0, 0.9);
+    --glass-highlight: rgba(90, 53, 31, 0.2);
+    --glass-highlight-strong: rgba(90, 53, 31, 0.3);
+    
+    /* Legacy color mapping for compatibility */
+    --color-index-0: var(--color-primary);
+    --color-index-16: var(--color-secondary);
+    --color-index-32: var(--color-tertiary);
+    --color-index-48: var(--color-quaternary);
+    --color-index-64: var(--color-burnt-orange-100);
+    --color-index-80: var(--color-burnt-orange-200);
+    --color-index-96: var(--color-burnt-orange-300);
+    --color-index-112: var(--color-text-muted);
+    --color-index-128: var(--color-text-secondary);
+    --color-index-144: var(--color-text-primary);
+    --color-index-160: var(--color-burnt-orange-400);
+    --color-index-176: var(--color-burnt-orange-500);
+    --color-index-192: var(--color-accent-warm);
+    --color-index-208: var(--color-accent-cool);
+    --color-index-224: var(--color-accent-gold);
+    --color-index-240: #ffffff;
+}
+
+/* ULTRA DARK TAB STYLING */
+:root {
+    --active-tab-background-color: var(--glass-bg);
+    --active-tab-text-color: var(--color-text-primary);
+    --inactive-tab-background-color: rgba(0, 0, 0, 0.6);
+    --inactive-tab-text-color: var(--color-text-muted);
+}
+
+/* TITLE OF THE NOTE START */
+:root {
+    --input-background-color: var(--color-primary) !important;
+    --input-text-color: var(--color-text-primary);
+}
+
+:root {
+    --theme-style: dark;
+    
+    /* Ultra dark glass effect backgrounds */
+    --accented-background-color: var(--glass-bg);
+    --active-item-background-color: var(--glass-bg);
+    --active-item-text-color: var(--color-accent-gold);
+    
+    /* Dark button styling */
+    --button-background-color: var(--glass-bg);
+    --button-border-color: var(--glass-border);
+    --button-border-radius: 12px;
+    --button-disabled-background-color: rgba(0, 0, 0, 0.5);
+    --button-text-color: var(--color-text-secondary);
+    
+    /* GTA-style typography */
+    --detail-font-family: "Pricedown", "Orbitron", "Rajdhani", "Arial Black", sans-serif;
+    --detail-font-size: 14px;
+    --detail-text-font-family: "Pricedown", "Orbitron", "Rajdhani", "Arial Black", sans-serif;
+    
+    /* Header with dark glass effect */
+    --header-background-color: var(--glass-bg) !important;
+    --hover-item-background-color: var(--glass-highlight);
+    --hover-item-text-color: var(--color-text-primary);
+    
+    /* Pane styling with dark glass effects */
+    --launcher-pane-background-color: var(--color-primary);
+    --left-pane-background-color: var(--color-primary);
+    --left-pane-text-color: var(--color-text-secondary);
+    --link-color: var(--color-burnt-orange-400);
+    
+    /* Main content area */
+    --main-background-color: var(--color-primary);
+    --main-border-color: var(--glass-border);
+    --main-font-family: "Pricedown", "Orbitron", "Rajdhani", "Arial Black", sans-serif;
+    --main-font-size: 14px;
+    --main-text-color: var(--color-text-primary);
+    
+    /* Menu styling */
+    --menu-background-color: var(--glass-bg);
+    --menu-text-color: var(--color-text-secondary);
+    --mermaid-theme: dark;
+    
+    /* Modal styling */
+    --modal-backdrop-color: rgba(0, 0, 0, 0.95);
+    --modal-background-color: var(--glass-bg);
+    
+    /* Monospace font */
+    --monospace-font-family: "Pricedown", "Orbitron", "Rajdhani", "Arial Black", sans-serif;
+    --more-accented-background-color: var(--color-secondary);
+    --muted-text-color: var(--color-text-muted);
+    
+    /* Primary button styling */
+    --primary-button-background-color: linear-gradient(135deg, var(--color-burnt-orange-400), var(--color-burnt-orange-500));
+    --primary-button-border-color: var(--color-burnt-orange-300);
+    --primary-button-text-color: var(--color-text-primary);
+    
+    /* Scrollbar styling */
+    --scrollbar-background-color: var(--color-secondary);
+    --scrollbar-border-color: transparent;
+    
+    /* Tooltip styling */
+    --tooltip-background-color: var(--glass-bg);
+    
+    /* Tree styling */
+    --tree-font-family: inherit;
+    --tree-font-size: 14px;
+    --bs-border-color: var(--glass-border);
+}
+
+/* ULTRA DARK GLASS EFFECT STYLING */
+* {
+    box-sizing: border-box;
+}
+
+/* Enhanced dark glass effect for main containers */
+#root-widget,
+.left-pane,
+.right-pane,
+.header,
+.menu,
+.modal {
+    backdrop-filter: blur(40px) saturate(120%) brightness(0.8) contrast(1.2);
+    -webkit-backdrop-filter: blur(40px) saturate(120%) brightness(0.8) contrast(1.2);
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    box-shadow: 
+        0 16px 48px var(--glass-shadow-heavy),
+        0 8px 24px var(--glass-shadow),
+        inset 0 1px 0 var(--glass-highlight);
+    position: relative;
+}
+
+#root-widget::before,
+.left-pane::before,
+.right-pane::before,
+.header::before,
+.menu::before,
+.modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        var(--glass-highlight) 0%, 
+        transparent 50%, 
+        var(--glass-highlight-strong) 100%);
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+/* Enhanced dark scrollbar styling */
+#root-widget ::-webkit-scrollbar {
+    width: 12px;
+}
+
+#root-widget ::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+    border-radius: 6px;
+}
+
+#root-widget ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--color-burnt-orange-300), var(--color-burnt-orange-400));
+    border-radius: 6px;
+    border: 2px solid var(--color-secondary);
+}
+
+#root-widget ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--color-burnt-orange-400), var(--color-burnt-orange-500));
+}
+
+/* Dark form elements */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid var(--color-burnt-orange-400) !important;
+    box-shadow: 0 0 0 4px var(--glass-highlight-strong), 0 8px 24px var(--glass-shadow) !important;
+    background: var(--glass-bg-light);
+    backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    transform: translateY(-1px);
+}
+
+input,
+textarea,
+select {
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    border-radius: 12px;
+    color: var(--color-text-primary);
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(20px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(20px) saturate(100%) brightness(0.9);
+    box-shadow: 0 4px 16px var(--glass-shadow);
+}
+
+/* Enhanced dark typography */
+body .note-detail-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+}
+
+/* Dark code editor styling */
+body .CodeMirror {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    box-shadow: 0 4px 16px var(--glass-shadow);
+}
+
+/* Dark tree node styling */
+span.fancytree-node,
+span.fancytree-node:hover {
+    border: 0px;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: 2px 0;
+    transition: all 0.2s ease;
+}
+
+span.fancytree-node:hover {
+    background: var(--glass-highlight);
+    backdrop-filter: blur(8px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(8px) saturate(100%) brightness(0.9);
+}
+
+/* Dark gutter styling */
+div.gutter.gutter-horizontal {
+    background: linear-gradient(to bottom, 
+        transparent, 
+        var(--glass-border), 
+        transparent);
+    border-radius: 2px;
+}
+
+/* Dark tree actions */
+.tree-actions {
+    border: 0px !important;
+    background: var(--glass-bg);
+    border-radius: 8px;
+    backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+}
+
+/* Hide rendered note attributes */
+.rendered-note-attributes {
+    display: none;
+}
+
+/* Dark list markers */
+div#right-pane li::marker {
+    content: "⚫ ";
+    color: var(--color-burnt-orange-400);
+}
+
+/* Enhanced dark button styling */
+button {
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    border-radius: 16px;
+    color: var(--color-text-secondary);
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    box-shadow: 
+        0 6px 20px var(--glass-shadow),
+        inset 0 1px 0 var(--glass-highlight);
+    position: relative;
+    overflow: hidden;
+    font-family: "Pricedown", "Orbitron", "Rajdhani", "Arial Black", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        var(--glass-highlight-strong), 
+        transparent);
+    transition: left 0.5s ease;
+}
+
+button:hover {
+    background: var(--glass-bg-light);
+    border-color: var(--color-burnt-orange-400);
+    color: var(--color-text-primary);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 12px 32px var(--glass-shadow-heavy),
+        0 4px 16px var(--glass-shadow),
+        inset 0 1px 0 var(--glass-highlight-strong);
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 
+        0 8px 24px var(--glass-shadow),
+        inset 0 1px 0 var(--glass-highlight);
+}
+
+/* Dark tab styling enhancements */
+.tab {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    background: var(--glass-bg);
+    border-bottom-color: var(--color-burnt-orange-400);
+    box-shadow: 0 -2px 8px var(--glass-shadow);
+}
+
+/* Dark link styling */
+a {
+    color: var(--color-burnt-orange-400);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-accent-gold);
+    text-shadow: 0 0 8px var(--glass-highlight);
+}
+
+/* Dark selection styling */
+::selection {
+    background: var(--color-burnt-orange-400);
+    color: var(--color-text-primary);
+}
+
+::-moz-selection {
+    background: var(--color-burnt-orange-400);
+    color: var(--color-text-primary);
+}
+
+/* Enhanced dark Trilium Next specific enhancements */
+.note-detail {
+    background: var(--glass-bg);
+    backdrop-filter: blur(45px) saturate(120%) brightness(0.8) contrast(1.2);
+    -webkit-backdrop-filter: blur(45px) saturate(120%) brightness(0.8) contrast(1.2);
+    border-radius: 16px;
+    border: 2px solid var(--glass-border);
+    box-shadow: 
+        0 20px 60px var(--glass-shadow-heavy),
+        0 8px 24px var(--glass-shadow),
+        inset 0 1px 0 var(--glass-highlight);
+    position: relative;
+}
+
+.note-detail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        var(--glass-highlight) 0%, 
+        transparent 30%, 
+        transparent 70%, 
+        var(--glass-highlight-strong) 100%);
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.note-detail-text {
+    background: transparent;
+    color: var(--color-text-primary);
+    line-height: 1.7;
+}
+
+/* Dark search and filter styling */
+.search-input,
+.filter-input {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+}
+
+.search-input:focus,
+.filter-input:focus {
+    border-color: var(--color-burnt-orange-400);
+    box-shadow: 0 0 0 3px var(--glass-highlight);
+}
+
+/* Dark context menu styling */
+.context-menu {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+}
+
+.context-menu-item {
+    color: var(--color-text-secondary);
+    border-radius: 6px;
+    margin: 2px;
+    transition: all 0.2s ease;
+}
+
+.context-menu-item:hover {
+    background: var(--glass-highlight);
+    color: var(--color-text-primary);
+}
+
+/* Dark status bar styling */
+.status-bar {
+    background: var(--glass-bg);
+    border-top: 1px solid var(--glass-border);
+    backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(15px) saturate(100%) brightness(0.9);
+    color: var(--color-text-muted);
+}
+
+/* Dark loading and progress indicators */
+.progress-bar {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, var(--color-burnt-orange-400), var(--color-burnt-orange-500));
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* Dark notification styling */
+.notification {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    -webkit-backdrop-filter: blur(25px) saturate(100%) brightness(0.9);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    color: var(--color-text-primary);
+}
+
+/* Responsive design considerations */
+@media (max-width: 768px) {
+    .left-pane,
+    .right-pane {
+        backdrop-filter: blur(20px) saturate(100%) brightness(0.9);
+        -webkit-backdrop-filter: blur(20px) saturate(100%) brightness(0.9);
+    }
+    
+    button {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+    
+    input,
+    textarea,
+    select {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Animation keyframes for smooth transitions */
+@keyframes glassShimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.glass-shimmer {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--glass-highlight),
+        transparent
+    );
+    background-size: 200% 100%;
+    animation: glassShimmer 2s infinite;
+}
+
+/* Focus indicators for accessibility */
+*:focus-visible {
+    outline: 2px solid var(--color-burnt-orange-400);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --glass-bg: rgba(0, 0, 0, 0.95);
+        --glass-border: rgba(90, 53, 31, 0.6);
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #f0f0f0;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Additional dark theme enhancements */
+body {
+    font-family: "Pricedown", "Orbitron", "Rajdhani", "Arial Black", sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    background: var(--color-primary);
+}
+
+/* Enhanced dark glass shimmer effect */
+.glass-shimmer-enhanced {
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        var(--glass-highlight-strong) 50%,
+        transparent 70%
+    );
+    background-size: 200% 200%;
+    animation: glassShimmer 3s ease-in-out infinite;
+}
+
+/* Dark GTA-style text effects */
+.gta-text {
+    font-family: "Pricedown", "Orbitron", "Rajdhani", "Arial Black", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 
+        2px 2px 0px var(--color-burnt-orange-500),
+        4px 4px 8px rgba(0, 0, 0, 0.8);
+    color: var(--color-accent-gold);
+}
+
+/* Enhanced dark glass containers */
+.glass-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(50px) saturate(120%) brightness(0.8) contrast(1.3);
+    -webkit-backdrop-filter: blur(50px) saturate(120%) brightness(0.8) contrast(1.3);
+    border: 3px solid var(--glass-border-strong);
+    border-radius: 20px;
+    box-shadow: 
+        0 24px 72px var(--glass-shadow-heavy),
+        0 8px 32px var(--glass-shadow),
+        inset 0 2px 0 var(--glass-highlight-strong),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        from 0deg,
+        transparent,
+        var(--glass-highlight),
+        transparent,
+        var(--glass-highlight-strong),
+        transparent
+    );
+    animation: rotate 15s linear infinite;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

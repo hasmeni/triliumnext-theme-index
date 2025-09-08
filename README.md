@@ -1,4 +1,4 @@
-# triliumnext-theme-index
+# triliumnext-theme-index 
 
 INDEX is a dark theme.
 

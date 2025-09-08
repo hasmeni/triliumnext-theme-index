@@ -81,7 +81,9 @@ If the Pricedown font is not available, the theme will automatically fall back t
 
 ---
 
-##GTA Dark Mode method
+**##GTA Dark Mode method**
+
+<br>
 <img width="2668" height="1656" alt="image" src="https://github.com/user-attachments/assets/d3bd1d88-02b8-43bd-b436-de4dd365e90e" />
 
 ### Installation Steps

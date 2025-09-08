@@ -26,11 +26,13 @@ INDEX is a dark theme.
 11. Set the `Code Syntax Highlighting for Text Notes` `Color Scheme` to `xt256 (DARK)`.
 12. You may need to restart TriliumNext.
 
-13.
+   
      ---
 
     
-16. ## SETUP METHOD FOR GTA STYLE FONT ( DIFFERENT THEME FROM THE ORINIAL. )
+    ## SETUP METHOD FOR GTA STYLE FONT ( DIFFERENT THEME FROM THE ORINIAL. )
+    <img width="2706" height="1708" alt="image" src="https://github.com/user-attachments/assets/cbece51b-dac4-4da5-bfcf-e84b181be18b" />
+
 - Install [TriliumNext](https://github.com/TriliumNext/Notes) (Tested in version v0.90.12)
 - Download the **Pricedown** font (GTA-style font) from one of these sources:
   - [FontBolt - GTA Font](https://www.fontbolt.com/font/grand-theft-auto-font/)
